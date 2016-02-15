@@ -1,0 +1,302 @@
+/* General Demo Style */
+@import url(http://fonts.googleapis.com/css?family=Lato:300,400,700);
+
+@font-face {
+	font-family: 'fontawesome';
+	src:url('../fonts/fontawesome.eot');
+	src:url('../fonts/fontawesome.eot?#iefix') format('embedded-opentype'),
+		url('../fonts/fontawesome.svg#fontawesome') format('svg'),
+		url('../fonts/fontawesome.woff') format('woff'),
+		url('../fonts/fontawesome.ttf') format('truetype');
+	font-weight: normal;
+	font-style: normal;
+}
+
+body, html 
+{ 	
+	font-size: 100%; 	
+	padding: 0; 
+	margin: 0;
+	background-color: #29CCE5;
+}
+
+/* Reset */
+*,
+*:after,
+*:before {
+	-webkit-box-sizing: border-box;
+	-moz-box-sizing: border-box;
+	box-sizing: border-box;
+}
+
+/* Clearfix hack by Nicolas Gallagher: http://nicolasgallagher.com/micro-clearfix-hack/ */
+.clearfix:before,
+.clearfix:after {
+	content: " ";
+	display: table;
+}
+
+.clearfix:after {
+	clear: both;
+}
+
+body {
+    font-family: 'Lato', Calibri, Arial, sans-serif;
+    color: #47a3da;
+
+}
+
+a {
+	color: #f0f0f0;
+	text-decoration: none;
+}
+
+a:hover {
+	color: #000;
+}
+
+.main,
+.container > header {
+	width: 90%;
+	max-width: 70em;
+	margin: 0 auto;
+	padding: 0 1.875em 3.125em 1.875em;
+}
+
+.container > header {
+	padding: 2.875em 1.875em 1.875em;
+}
+
+.container > header h1 {
+	font-size: 2.125em;
+	line-height: 1.3;
+	margin: 0;
+	float: left;
+	font-weight: 400;
+}
+
+.container > header span {
+	display: block;
+	font-weight: 700;
+	text-transform: uppercase;
+	letter-spacing: 0.5em;
+	padding: 0 0 0.6em 0.1em;
+}
+
+.container > header nav {
+	float: right;
+}
+
+.container > header nav a {
+	display: block;
+	float: left;
+	opacity: 0.7;
+
+}
+
+
+
+.container > header nav a:hover {
+		opacity: 1;
+		color: #fff;
+		text-decoration: underline;
+}
+
+.icon-drop:before, 
+.icon-arrow-left:before {
+	font-family: 'fontawesome';
+	position: absolute;
+	top: 0;
+	width: 100%;
+	height: 100%;
+	speak: none;
+	font-style: normal;
+	font-weight: normal;
+	line-height: 2;
+	text-align: center;
+	color: #47a3da;
+	-webkit-font-smoothing: antialiased;
+	text-indent: 8000px;
+	padding-left: 8px;
+}
+
+.container > header nav a:hover:before {
+	color: #fff;
+}
+
+.icon-drop:before {
+	content: "\e000";
+}
+
+.icon-arrow-left:before {
+	content: "\f060";
+}
+
+p, h1 {
+	text-align: center;
+	color: #fff;
+	font-size: 36px;
+}
+
+p {
+	font-family: helvetica;
+	font-size: 22px;
+	line-height: 33px;
+	
+}
+
+
+.superJumbo {
+    border: none;
+    cursor: pointer;
+    display: inline-block;
+    font-weight: bold;
+    line-height: 22px;
+    margin: 8px 4px 0 0;
+    padding: 7px 20px;
+    text-align: center;
+    font-size: 17px;
+    border-radius: 4px;
+
+	}
+	
+
+.button-green {
+    background: #61bd4f;
+    background: -webkit-linear-gradient(top,#61bd4f 0,#5aac44 100%);
+    background: linear-gradient(to bottom,#61bd4f 0,#5aac44 100%);
+    box-shadow: 0 2px 0 #3f6f21;
+    color: #fff;
+
+}
+
+.button-green:not([disabled]):focus,.button-green:not([disabled]):hover {
+    background: #5aac44;
+    background: -webkit-linear-gradient(top,#5aac44 0,#519839 100%);
+    background: linear-gradient(to bottom,#5aac44 0,#519839 100%);
+    color: #fff;
+}
+
+.button-green:not([disabled]):active {
+    background: #519839;
+    background: -webkit-linear-gradient(top,#519839 0,#49852e 100%);
+    background: linear-gradient(to bottom,#519839 0,#49852e 100%);
+    color: #fff;
+}
+
+textarea, input[type="text"] {
+    background: #fff;
+    border-radius: 4px;
+    border: 1px solid #fff;
+    -moz-box-sizing: border-box;
+    box-sizing: border-box;
+    padding: .6em;
+    max-width: 300px;
+    width: 100%;
+    font-size: 16px;
+    margin-bottom: 1em;
+}
+
+.board-form {
+	margin-top: 1em;
+}
+
+.button-centerer {
+	text-align: center;
+	margin-bottom: 2em;
+}
+
+.inspiring-boards {
+	    position: relative;
+    left: -117px;
+}
+
+.inspiring-boards-label {
+	position: relative;
+    left: 140px;
+    top: 40px;
+    color: #4d4d4d;
+}
+
+.examples{
+
+	position: relative;
+    left: 49px;
+    top: 50px;
+
+}
+
+.vidthumb-container {
+
+    display: block;
+    text-align: center;
+    outline: none;
+}
+
+.vidthumb {
+	position: relative;
+    left: -6px;
+    top: 25px;
+    opacity:1;
+    filter:alpha(opacity=100); 
+    transition: all .2s ease-in-out; 
+       
+    }
+
+.grow { transition: all .2s ease-in-out; }
+.grow:hover { transform: scale(1.1); }
+
+.vidthumb:hover {
+	opacity: .95;
+    filter:alpha(opacity=95);  
+
+    //transform: scale(.98);
+}
+
+.perspective {
+	margin: 4em auto;
+    max-width: 599px;
+}
+
+.perspective h1 {
+
+    text-align: left !important;
+}
+
+.perspective p {
+
+    text-align: left !important;
+}
+
+.perspective-img {
+	    float: left;
+    position: relative;
+    right: 46px;
+
+}
+
+
+.para {
+	margin: 0 auto;
+}
+
+.one, two, three {
+  	display: inline !important;
+}
+
+.board-list-card {
+	text-align: center;
+}
+
+.pick-some-examples {
+	color: #FAF3C0;
+}
+
+.make-a-board p {
+	font-size: 16px;
+    line-height: 23px;
+    margin-bottom: 2em;
+}
+
+
+
